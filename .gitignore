@@ -7,7 +7,8 @@
 /coverage
 
 # production
-/build
+#/build
+# Commit build directory to be used on Github Pages
 
 # misc
 .DS_Store
