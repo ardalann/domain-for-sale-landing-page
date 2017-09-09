@@ -11,7 +11,9 @@ class LandingPage extends React.Component {
     const { availableDomains } = this.props;
     const { q } = queryString.parse(location.search); // eslint-disable-line
 
-    const validDomainRequested = availableDomains.indexOf(q) > -1;
+    const validDomainRequested = true; //availableDomains.indexOf(q) > -1;
+    const requestedDomain =
+      availableDomains.indexOf(q) > -1 ? q : availableDomains[0];
 
     return (
       <Container>
@@ -19,7 +21,7 @@ class LandingPage extends React.Component {
           <H1 fontWeight={300} marginBottom={100}>
             <Strong fontWeight={700}>Congratulations!</Strong>
             <br />
-            <A href={`http://${q}`}>{q}</A>
+            <A href={`http://${requestedDomain}`}>{requestedDomain}</A>
             <br />
             is for sale.
           </H1>
