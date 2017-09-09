@@ -1,5 +1,5 @@
 import React from "react";
-import EmailObfuscate from "email-obfuscate";
+import EmailObfuscate from "email-obfuscate/lib/emailObfuscate";
 
 class Email extends React.Component {
   componentDidMount() {
