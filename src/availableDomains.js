@@ -6,6 +6,8 @@ export default [
   ["boundless", "wp", ".com"],
   ["canada", "dreamers", ".ca"],
   ["canada", "dreamers", ".com"],
+  ["dreamers", "canada", ".ca"],
+  ["dreamers", "canada", ".com"],
   ["dreamers", "immigration", ".ca"],
   ["immigration", "dreamers", ".ca"],
   ["immigration", ".community"],
