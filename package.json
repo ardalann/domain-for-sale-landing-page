@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf docs && react-scripts build && mv build docs",
+    "build":
+      "rm -rf docs && react-scripts build && mv build docs && cp CNAME docs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
