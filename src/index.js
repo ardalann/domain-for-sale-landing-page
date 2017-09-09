@@ -1,8 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "glamor/reset";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import availableDomains from "./availableDomains";
+import LandingPage from "./components/LandingPage";
+import registerServiceWorker from "./registerServiceWorker";
+
+ReactDOM.render(
+  <LandingPage availableDomains={availableDomains} />,
+  document.getElementById("root")
+);
 registerServiceWorker();
