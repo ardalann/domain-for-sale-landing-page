@@ -13,5 +13,6 @@ export default [
   ["immigration", ".community"],
   ["immigration", ".investments"],
   ["immigration", ".school"],
-  ["immigration", ".wtf"]
+  ["immigration", ".wtf"],
+  ["pad", ".ir"]
 ];
