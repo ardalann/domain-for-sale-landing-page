@@ -1,36 +1,24 @@
 import React from "react";
 import { H1, Strong } from "glamorous";
-import queryString from "query-string";
 
 import Container from "./Container";
 import A from "./A";
-import Email from "./Email";
+import Email from "../Email";
 
 class LandingPage extends React.Component {
   render() {
-    const { availableDomains } = this.props;
-    const { q } = queryString.parse(location.search); // eslint-disable-line
-
-    const validDomainRequested = true; //availableDomains.indexOf(q) > -1;
-    const requestedDomain =
-      availableDomains.indexOf(q) > -1 ? q : availableDomains[0];
+    const { queriedDomain } = this.props;
 
     return (
       <Container>
-        {validDomainRequested ? (
-          <H1 fontWeight={300} marginBottom={100}>
-            <Strong fontWeight={700}>Congratulations!</Strong>
-            <br />
-            <A href={`http://${requestedDomain}`}>{requestedDomain}</A>
-            <br />
-            is for sale.
-          </H1>
-        ) : (
-          <H1 fontWeight={300} marginBottom={100}>
-            Page not found.
-          </H1>
-        )}
-        {validDomainRequested && <Email />}
+        <H1 fontWeight={300} marginBottom={100}>
+          <Strong fontWeight={700}>Congratulations!</Strong>
+          <br />
+          <A href={`http://${queriedDomain}`}>{queriedDomain}</A>
+          <br />
+          is for sale.
+        </H1>
+        <Email domain="ardalan" tld="me" />
       </Container>
     );
   }

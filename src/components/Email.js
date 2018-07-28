@@ -6,8 +6,8 @@ class Email extends React.Component {
     if (this.containerNode) {
       EmailObfuscate(this.containerNode, {
         name: "contact",
-        domain: "ardalan",
-        tld: "me",
+        domain: this.props.domain,
+        tld: this.props.tld,
         // Alternate Text
         altText: "Email"
       });
