@@ -1,7 +1,6 @@
 /* eslint-disable */
 
 export default [
-  ["boundless", "web", ".ca"],
   ["help", "provide", ".com"],
   ["boundless", "wp", ".com"],
   ["canada", "dreamers", ".ca"],
