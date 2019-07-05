@@ -6,7 +6,7 @@
     "react-scripts": "1.0.13"
   },
   "dependencies": {
-    "email-obfuscate": "0.0.4",
+    "email-obfuscate": "0.0.6",
     "glamor": "^2.20.40",
     "glamorous": "^4.8.0",
     "query-string": "^5.0.0",
