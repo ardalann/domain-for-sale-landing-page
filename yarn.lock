@@ -2024,9 +2024,9 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-email-obfuscate@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/email-obfuscate/-/email-obfuscate-0.0.4.tgz#52a733f22a82aa21d3d5f447a6268600af5b17df"
+email-obfuscate@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/email-obfuscate/-/email-obfuscate-0.0.6.tgz#999be7c29d18cc74249cf27d07d3e789fdbfb6f2"
   dependencies:
     object-assign "^4.0.1"
 
